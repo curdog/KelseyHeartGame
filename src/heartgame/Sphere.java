@@ -67,13 +67,22 @@ public class Sphere {
 			
 		}
 		//middles triangle strips
-		for(){
+		for( int iz = 1; iz < slices -2; iz++){
+			nmb,nnnn
+			for(int i = 1; i <slices -; i++){
 			
+			}
 		}
 		
 		//bottoms triangle fan
-		for(){
-			
+		vertexs[slices-1][0][X] = 0.0f + cx;
+		vertexs[slices-1][0][Y] = 0.0f + cy;
+		vertexs[slices-1][0][Z] = 0.0f - radius + cz;
+		
+		for(int i = 1; i <slices; i++){
+			vertexs[slices-1][i][X] = cx + radius * (float)Math.cos( (i * (2 * (float)Math.PI) / slices) );
+			vertexs[slices -1][i][Y] = cy + radius * (float)Math.sin( (i * (2 * (float)Math.PI) / slices) );
+			vertexs[slices-1][i][Z] = 0.0f -  radius + radius/slices;
 		}
 	}
 	
