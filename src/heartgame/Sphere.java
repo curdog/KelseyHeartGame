@@ -58,9 +58,12 @@ public class Sphere {
 		float voffset = 0;
 		final float PI = (float)Math.PI;
 		//top triangle fan
-		
-		for( int i = 0; i < slices; i++ ){
-			
+		//center
+		vertexs[0][0][X] = cx;
+		vertexs[0][0][Y] = cy;
+		vertexs[0][0][Z] = cz + radius;
+		for( int i = 1; i < slices; i++ ){
+			vertexs[0][1][X] = 
 			
 		}
 		//middles triangle strips
